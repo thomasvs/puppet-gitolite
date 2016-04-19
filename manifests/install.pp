@@ -1,5 +1,5 @@
 class gitolite::install {
-    package { 'gitolite':
+    package { 'gitolite3':
         ensure => "present",
     }
 }

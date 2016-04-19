@@ -5,6 +5,6 @@
 
 FILE=`mktemp gitolite-post-receive-tmp.XXXXXXXX`
 cat - > $FILE
-cat $FILE | /var/lib/gitolite/.gitolite/hooks/common/git-notifier || exit 1
+cat $FILE | /var/lib/gitolite3/.gitolite/hooks/common/git-notifier || exit 1
 # cat $FILE | /usr/share/buildbot/contrib/git_buildbot.py -m BUILDBOT_HOST:PORT -a PASSWORD -r $GL_REPO || exit 1
 rm $FILE
